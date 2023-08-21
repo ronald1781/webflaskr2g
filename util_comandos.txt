@@ -1,0 +1,80 @@
+comandos de instalacionde pip  install pip
+comando instalacion de flask pip install flask
+se importa flask 
+from flas import Flask,Agregarmos render render_template
+desde windows nos ubicamos en la ruta e iniciamos el app
+
+via terminal ejecutamos el proyecto index con python index.python
+--host=0.0.0.0 --port=80
+
+en flask se crea template todo html
+
+se importa render template de flask
+
+SIN REINICIAR A CADA MOMENTO
+dentro de run(debug=true)
+
+Crear ambientes virtuales
+pip install virtualenv
+
+creamos virtualenv
+python m venv venv
+
+desde ingresar a venv/script verificar version de python y de pip
+ejecutar el comando de 
+pip install flask #dentro del venv script
+verificamos que este flask en lib
+
+python -m pip install flask
+
+intalar pipenv
+
+ejecutamos el proyecto dentro de src/index.python
+
+ejecutamos el comando desde script de venv el comando python ../../src/index.py para levantar el servicio
+
+instalacion de heroku cli 
+link https://devcenter.heroku.com/articles/heroku-cli
+se descarga segun s.o
+
+validar version de heroku cli
+
+#################################################################################################
+heroku login
+se escribi heroku login
+ingresamos las credenciales
+
+despues de validar el acceso o login
+crear un archivo txt de requirimiento
+requirements.txt
+
+indicar runtime de python que usa nuestra aplicacion
+para ello se crea un archivo runtime.txt
+
+y otro archivo llamado Procfile
+heroku require este gunicorn para ejecutar nuestr4o archivo http
+instalares una biblioteca gunicorn
+
+pip install gunicorn 
+esta instalacion se debe hacer dentro de venv/script
+pip install gunicorn 
+dentro de archivo Procfile igreamos web: index:app
+
+ahgora completamos los archivos *.txt que hemos creado
+iniciamos con runtime
+emos ingresado la version actual de pyton
+anora nos toca ver requirements.txt
+ejecutamos en venv/script el comando
+pip freeze la cual nos lista los paquetes y librerias
+ejecutamos el comando de 
+pip freeze > ../../src/requirements.txt
+
+ahora crtearemos un archivo gig
+
+creamos una aplicacion en heroku
+comando heroku create demoflaskr2g
+
+otro coamndo de despliegue
+heroku git remote demoflaskr2g
+
+git push heroku master
